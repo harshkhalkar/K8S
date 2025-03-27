@@ -71,3 +71,11 @@ sudo apt-mark hold kubelet kubeadm kubectl
 sleep 2
 
 echo "Kubernetes installation complete!"
+
+# whats next - sudo kubeadm init --ignore-preflight-errors=all
+# mkdir -p $HOME/.kube
+# sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+# sudo chown $(id -u):$(id -g) $HOME/.kube/config
+# kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.0/manifests/calico.yaml
+# kubectl get nodes
+# kubeadm token create --print-join-command
